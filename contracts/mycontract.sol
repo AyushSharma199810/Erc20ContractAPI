@@ -32,6 +32,7 @@ interface IERC20 {
   
      event Transfer(address indexed _from, address indexed _to, uint256 _value);
      event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+     event balace(address indexed _from, uint256 _value);
 	 
 
    
@@ -117,6 +118,7 @@ contract mycontract is IERC20{
     function check_balance(address add) public view returns(uint256){
         
 		return balances[add];
+    
 		
     }
 
